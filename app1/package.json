@@ -16,7 +16,7 @@
     "node": ">=16.18.1"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+    "*.{js,jsx,ts,tsx,mjs,cjs,cjsx}": [
       "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
     ]
   },
@@ -30,13 +30,13 @@
     "react-dom": "~18.2.0"
   },
   "devDependencies": {
+    "@modern-js-app/eslint-config": "2.35.1",
     "@modern-js/app-tools": "2.35.1",
     "@modern-js/eslint-config": "2.35.1",
-    "@modern-js/tsconfig":"2.35.1",
-    "@modern-js-app/eslint-config": "2.35.1",
+    "@modern-js/tsconfig": "2.35.1",
+    "husky": "~8.0.1",
     "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1",
     "rimraf": "~3.0.2"
   }
 }

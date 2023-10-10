@@ -1,0 +1,19 @@
+{
+  "name": "modernjs-host-remote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'cd app1; yarn dev' 'cd app2; yarn dev'",
+    "build": "concurrently 'cd app1; yarn build' 'cd app2; yarn build'",
+    "serve": "concurrently 'cd app1; yarn serve' 'cd app2; yarn serve'",
+    "clean": "concurrently 'cd app1; yarn reset' 'cd app2; yarn reset'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "wait-on": "^7.0.1"
+  }
+}

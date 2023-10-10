@@ -1,5 +1,6 @@
 import { Helmet } from '@modern-js/runtime/head';
 import './index.css';
+import Button from 'app2/Button';
 
 const Index = () => (
   <div className="container-box">
@@ -21,7 +22,7 @@ const Index = () => (
         <p className="name">Modern.js</p>
       </div>
       <p className="description">
-        Get started by editing <code className="code">src/routes/page.tsx</code>
+        Módulo Federado: <Button />
       </p>
       <div className="grid">
         <a
